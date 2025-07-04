@@ -1,6 +1,7 @@
 # S3 버킷 생성
 resource "aws_s3_bucket" "deploy_bucket" {
   bucket = "simple-web-deploy-bucket-${data.aws_caller_identity.current.account_id}"  # 고유한 버킷 이름 필요
+  force_destroy = true            # ★ 추가
 }
 
 # S3 버킷 버전 관리 설정
