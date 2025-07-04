@@ -67,7 +67,7 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: 9. EKS kubeconfig 업데이트
-        run: aws eks update-kubeconfig --name simple-web-eks-ci
+        run: aws eks update-kubeconfig --name istory
 
       - name: 10. 쿠버네티스 매니페스트 적용
         run: kubectl apply -f simple-deploy.yaml
