@@ -13,4 +13,4 @@ COPY scripts/ /usr/share/nginx/html/scripts/
 EXPOSE 80
 
 # nginx 실행
-CMD ["nginx", "-g", "daemon off;"]$
+CMD ["nginx", "-g", "daemon off;"]
